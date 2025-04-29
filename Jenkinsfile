@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy WAR') {
             steps {
                 // Replace with your actual remote details
-                sh 'scp target/my-webapp.war user@your-server:/path/to/tomcat/webapps/'
+                sh 'scp target/MavenWebAppWar.war user@your-server:/path/to/tomcat/webapps/'
             }
         }
     }
