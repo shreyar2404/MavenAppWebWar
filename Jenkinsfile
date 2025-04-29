@@ -19,11 +19,6 @@ pipeline {
             }
         }
 
-        stage('Deploy WAR') {
-            steps {
-                // Replace with your actual remote details
-                sh 'scp target/MavenWebAppWar.war deployuser@192.168.1.100:/opt/tomcat/webapps/'
-            }
-        }
+        
     }
 }
